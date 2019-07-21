@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="EReferralSystem.Views.HomePage.HomePage">
+
+    <StackLayout
+        x:Name="firstOuter_Stack"
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand"
+        Orientation="Vertical"
+        BackgroundColor="#F0F0F0">
+        
+        <!--Name Layout-->
+        <StackLayout
+            x:Name="secondOuter_Stack"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="FillAndExpand"
+            Orientation="Horizontal"
+            BackgroundColor="Silver">
+
+            <controls:CircleImage 
+                Source="noimage.jpg"
+                WidthRequest="160"
+                HeightRequest="160"
+                Aspect="AspectFill"/>
+
+            <StackLayout
+                x:Name="thirdOuter_Stack"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Orientation="Vertical">
+
+                <Label
+                    x:Name="text_adminName" 
+                    Text="Jane D Doe"
+                    FontSize="30"/>
+
+                <Label
+                    x:Name="text_designation"
+                    Text="Administrator"/>
+
+            </StackLayout>
+
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
